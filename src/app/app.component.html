@@ -1,0 +1,85 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-content>
+    <div class="menu-header-bg">Menu</div>
+    <div class="header-content">
+      <img src="../assets/icon/Logo.png" alt="">
+      <ion-label>
+        <h2>Cooks Nest</h2>  
+      </ion-label>
+    </div>
+    <div class="action-button">
+      <ion-button>
+        <ion-icon slot="start" src="../assets/icon/lista.svg"></ion-icon> Categorias 
+      </ion-button>
+    </div>
+ <ion-list class="menu-items" lines="none" >
+      <ion-item-divider>
+        <ion-label>
+          Opciones básicas
+        </ion-label>
+      </ion-item-divider>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item  routerLink="recetas">
+          <ion-icon src="../assets/icon/home.svg"></ion-icon>Home
+        </ion-item>
+      </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">
+      <ion-item routerLink="carne" >
+        <ion-icon src="../assets/icon/carne-picada.svg" ></ion-icon>Carnes
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">  
+      <ion-item routerLink="pasta">
+        <ion-icon  src="../assets/icon/pasta.svg" ></ion-icon>Pastas
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">
+      <ion-item routerLink="pescado"> 
+        <ion-icon src="../assets/icon/pescado.svg"></ion-icon> Pescados 
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">
+      <ion-item routerLink="postre">   
+        <ion-icon src="../assets/icon/postre.svg"></ion-icon> Postres 
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">
+      <ion-item routerLink="community">   
+        <ion-icon src="../assets/icon/postre.svg"></ion-icon> Community
+      </ion-item>
+    </ion-menu-toggle>
+
+  
+  
+    <ion-item-divider>
+      <ion-label>
+        Otras opciones
+      </ion-label>
+    </ion-item-divider>
+    <ion-menu-toggle auto-hide="true">
+      <ion-item (click)="presentAlert()" style="text-align: center;">   
+        <ion-icon src="../assets/icon/acerca-de.svg"></ion-icon>About
+      </ion-item>
+    </ion-menu-toggle>
+
+    <ion-menu-toggle auto-hide="true">
+      <ion-item (click)="logout()"> 
+        <ion-icon src="../assets/icon/logout.svg"  ></ion-icon> Cerrar Sesión 
+      </ion-item>
+    </ion-menu-toggle>
+      
+ 
+
+
+    </ion-list>
+  </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
+ 

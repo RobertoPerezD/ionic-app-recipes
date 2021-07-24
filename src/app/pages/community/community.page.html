@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="a">
+      Recetas
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button shape="round" href="/edit" routerDirection="forward">
+        <ion-icon name="add">Añadir Recetas</ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-list>
+  <ion-card *ngFor="let community of  community">
+  <ion-card-content class="text-center">
+    <ion-icon name="add"></ion-icon>
+  <ion-card-title>
+    <ion-icon src="../assets/icon/pasta.svg"></ion-icon> {{community.title}}
+  </ion-card-title>
+   
+
+    <ion-card-subtitle>
+    {{community.details}}
+    </ion-card-subtitle> 
+
+    <ion-img [src]="community.img"></ion-img>
+
+ </ion-card-content>
+     
+  </ion-card>
+  </ion-list> 
+   
+  </ion-content>        

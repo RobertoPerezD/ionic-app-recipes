@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="danger">
+  <ion-buttons slot="start">
+    <ion-back-button  defaultHref="/pescado"  (click)="closeRecetas()"></ion-back-button>
+  </ion-buttons>
+ 
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="ion-no-padding"> 
+    <ion-row>
+      <ion-col class="ion-no-padding">
+        <ion-img [src]="img"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-item >
+      <ion-icon name="people-circle-outline" color="medium"></ion-icon>{{difficulty}}
+    </ion-item> 
+   <ion-item>
+    <ion-icon name="time-outline"  color="medium"></ion-icon>{{time}}
+   </ion-item>
+    <ion-row>
+      <ion-col class="ion-no-padding">
+        <h1 class="ion-text-center" >Ingredientes</h1>
+      </ion-col>
+    </ion-row> 
+  
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding">
+       <ion-list class="ion-no-padding">
+         <br>
+         <ion-item *ngFor="let ingredients of ingredients">
+          <ion-icon name="radio-button-on-outline"color="danger"></ion-icon>
+       <ion-list>{{ingredients}}</ion-list>  
+         </ion-item>
+       </ion-list>  
+      </ion-col> 
+    </ion-row>
+   
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-no-padding">
+        <h1 class="ion-text-center">Instrucciones</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-no-padding"> 
+      <ion-col class="ion-no-padding">
+       <ion-list class="ion-no-padding">  
+      <ion-item *ngFor="let instructions of instructions">
+        
+      <p>{{instructions}}</p>  
+      </ion-item>
+      
+       
+       </ion-list> 
+      </ion-col>
+    </ion-row> 
+  </ion-grid>
+  </ion-content>
+  
+ 

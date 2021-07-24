@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <img class="icon" src="assets/icon/Logo.png" alt="">
+ <br> 
+  <form autocomplete="off">
+    <ion-item>
+      <ion-label position="stacked" > Correo electrónico <span class="text-danger">*</span></ion-label>
+      <ion-input type="text"  [(ngModel)]="email" class="text-danger" name="email" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked"> Contraseña <span class="text-danger">*</span></ion-label>
+      <ion-input  class="text-danger"[(ngModel)]="password" class="text-danger" type="password" name="password" required="true"></ion-input>
+    </ion-item>
+    <ion-button (click)="onSubmitLogin()"class="ion-margin-top" type="submit" expand="block" >Entrar</ion-button>
+  </form>
+  
+  <div class="ion-text-center ion-margin-top">
+    <a text-center routerLink="/registro"><small>Crear Cuenta</small></a>
+  </div>
+
+  <ion-grid>
+    <ion-row> 
+      <ion-col size="3"> 
+        <ion-button class="google" (click)="loginGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

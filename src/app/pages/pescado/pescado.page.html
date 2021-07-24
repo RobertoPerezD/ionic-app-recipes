@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+   </ion-buttons>
+    <ion-title>Pescados</ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Buscar recetas" (ionInput)="filterList($event)"></ion-searchbar>
+</ion-header>
+ 
+  <ion-content> 
+    <ion-list>
+    <ion-card *ngFor="let pescado of  pescados "  (click)="openPescado(pescado)"> 
+    <ion-card-content class="text-center">
+    <ion-card-title>
+      <ion-icon src="../assets/icon/pescado.svg"></ion-icon> {{pescado.title}}
+    </ion-card-title>
+      
+      <ion-card-subtitle>
+        {{pescado.details}} 
+      </ion-card-subtitle> 
+  
+      <ion-img [src]="pescado.img"></ion-img>
+  
+   </ion-card-content>
+       
+    </ion-card>
+    </ion-list> 
+     
+    </ion-content>        

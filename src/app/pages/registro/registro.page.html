@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <img class="icon" src="assets/icon/cocina.svg" alt="">
+  <form autocomplete="off">
+    <br>
+    <ion-item>
+      <ion-label position="stacked" >Nombre<span class="text-danger">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="name" class="text-danger" name="name" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" > Correo electrónico <span class="text-danger">*</span></ion-label>
+      <ion-input type="email" [(ngModel)]="email" class="text-danger" name="email" required="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked"> Contraseña <span class="text-danger">*</span></ion-label>
+       <ion-input [(ngModel)]="password" class="text-danger" type="password" name="password" required="true"></ion-input>
+    </ion-item>
+    <ion-button (click)="onSubmitRegister()"class="ion-margin-top" type="submit" expand="block" >Registrar</ion-button>
+  </form> 
+   
+        <div class="ion-text-center ion-margin-top">
+         <a routerLink="/login"><small>Ya tengo cuenta</small></a>
+</div>
+
+
+</ion-content>
