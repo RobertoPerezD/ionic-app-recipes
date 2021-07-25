@@ -42,13 +42,13 @@ http://localhost:8100/
 
 ## Running the tests
 
-### Registrando un usuario 
-
-
+### Registro de usuario 
+![1627145096330](https://user-images.githubusercontent.com/87910005/126906542-ffdc3584-de51-4c7e-94d5-f6157d42557f.jpg)
 
 ### Home
-
-
+![1627145096280](https://user-images.githubusercontent.com/87910005/126906558-5a38f223-7c5e-41c4-a996-595dea192a0f.jpg)
 
 ### Menú
+![1627145096297](https://user-images.githubusercontent.com/87910005/126906564-d11e7e54-2460-4478-a4e4-95f7830f2c11.jpg)
+
 
