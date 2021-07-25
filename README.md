@@ -43,7 +43,7 @@ http://localhost:8100/
 ## Running the tests
 
 ### Registro de usuario 
-![1627145096330](https://user-images.githubusercontent.com/87910005/126906542-ffdc3584-de51-4c7e-94d5-f6157d42557f.jpg)
+![1627145096330](https://user-images.githubusercontent.com/87910005/126906542-ffdc3584-de51-4c7e-94d5-f6157d42557f.jpg {width=40px height=400px})
 
 ### Home
 ![1627145096280](https://user-images.githubusercontent.com/87910005/126906558-5a38f223-7c5e-41c4-a996-595dea192a0f.jpg)
