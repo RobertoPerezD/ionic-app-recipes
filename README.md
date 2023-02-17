@@ -4,7 +4,7 @@ Aplicación móvil desarrollada utilizando los Frameworks Ionic 4 y Angular 7.
 
 ## Explanation
 
-**Cooks Nest** es una aplicación que permite a los usuarios ver recetas con sus detalles tales como el tiempo de preparacion , ingrendentes , ademas las recetas estan dividas por categorias que se encuentra en el menu.
+**Cooks Nest** es una aplicación que permite a los usuarios ver recetas con sus detalles tales como el tiempo de preparacion , ingredientes , además las recetas estan dividas por categorias que se encuentra en el menu.
 
 ## Features
 
@@ -16,7 +16,7 @@ Aplicación móvil desarrollada utilizando los Frameworks Ionic 4 y Angular 7.
 
 ### Prerequisites
 
-Para poder ejecutar la aplicación se requiere del siguiente software:
+Para poder ejecutar la aplicación se requiere los siguientes requerimientos:
 
 - [node.js](https://nodejs.org/) - Entorno de ejecución para JavaScript.
 - [Angular CLI](https://cli.angular.io/) - Interfaz de línea de comandos para Angular.
